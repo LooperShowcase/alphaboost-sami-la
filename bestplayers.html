@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <center>
+    <title>Top NBA players</title>
+</center>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="bestplayers.html">Top NBA players</a></li>
+    <li><a href="allstar.html">ALL STAR</a></li>
+    <li><a href="signup.html">sign up</a></li>
+         <li id="ter"><input id="colorpicker" onchange="colorchange()" type="color"></li>
+  </ul>
+  <hr>
+  <h1>Best NBA players</h1>
+  <h2>1.Michael Jordan</h2>
+  <img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY2Njc5NDYzOTQ4NDYxNDA4/michael-jordan.jpg" width="10%">
+<h2>2.Lebron James</h2>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/LeBron_James_Lakers.jpg/640px-LeBron_James_Lakers.jpg" width="10%">
+<h2>3.Kobe Bryant</h2>
+<img src="https://ca-times.brightspotcdn.com/dims4/default/1595274/2147483647/strip/true/crop/1578x2048+0+0/resize/1145x1486!/quality/90/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F4d%2Fbb%2Fc9d40d98a3df7ed024e79b533b5d%2Flat-kobe-la0007948593-20130117" width="10%">
+<h2>4.Stephen Curry</h2>
+<img src="https://www.gannett-cdn.com/presto/2021/12/14/USAT/28f18725-7f28-4f90-87f4-2f0db84f129d-2021-12-14_Steph_Curry1.jpg?crop=2302,1524,x0,y166&width=1320&height=874&format=pjpg&auto=webp" width="14%">
+<script>
+  function colorchange(){
+      var newcolor=document.getElementById("colorpicker").value;
+      document.body.style.background=newcolor;
+  }
+</script>
+</body>
+</html>

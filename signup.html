@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bestplayers.html">Top NBA players</a></li>
+      <li><a href="allstar.html">ALL STAR</a></li>
+      <li><a href="signup.html">sign up</a></li>
+      <li id="ter">
+        <input id="colorpicker" onchange="colorchange()" type="color" />
+      </li>
+      <li>
+        <img
+          id="hi"
+          src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+          width="10%"
+        />
+      </li>
+    </ul>
+    <hr />
+    <center>
+      <div id="id1">
+        <form>
+          <label> Email </label>
+          <input type="email" />
+          <br />
+          <label>password</label>
+          <input type="password" />
+          <br />
+          <label
+            ><input id="imagepicker" type="file" onchange="imagechange()"
+          /></label>
+        </form>
+      </div>
+    </center>
+
+    <script>
+      function colorchange() {
+        var newcolor = document.getElementById("colorpicker").value;
+        document.body.style.background = newcolor;
+      }
+
+      function imagechange() {
+        var newimage = document.getElementById("imagepicker").files[0].name;
+        document.getElementById("hi").src = newimage;
+      }
+    </script>
+  </body>
+</html>

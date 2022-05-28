@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ALL STAR</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="bestplayers.html">Top NBA players</a></li>
+        <li><a href="allstar.html">ALL STAR</a></li>
+        <li><a href="signup.html">sign up</a></li>
+         <li id="ter"><input id="colorpicker" onchange="colorchange()" type="color"></li>
+      </ul>
+      <hr>
+      <p>The National Basketball Association All-Star Game is a basketball exhibition game hosted every February by the National Basketball Association (NBA) and showcases 24 of the league's star players. It is the featured event of NBA All-Star Weekend, a three-day event which goes from Friday to Sunday. The All-Star Game was first played at the Boston Garden on March 2, 1951.</p>
+      <iframe src="https://www.youtube.com/watch?v=SszB47aqlW0" frameborder="10"></iframe>
+      <script>
+        function colorchange(){
+            var newcolor=document.getElementById("colorpicker").value;
+            document.body.style.background=newcolor;
+        }
+        
+      </script>
+</body>
+</html>
